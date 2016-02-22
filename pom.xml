@@ -4,13 +4,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
- 	<parent>
-		<groupId>net.imagej</groupId>
-		<artifactId>pom-imagej</artifactId>
-		<version>7.0.0</version>
-		<relativePath />
-	</parent>
-	
 	<groupId>edu.wlu.cs.levy.cg</groupId>
 	<artifactId>kdtree</artifactId>
 	<version>1.0.0</version>
@@ -19,15 +12,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<name>KDTree for Java</name>
 	<url></url>
 	<inceptionYear>2016</inceptionYear>
-	
-	
-	<distributionManagement>
-    <repository>
-        <id>internal.repo</id>
-        <name>Temporary Staging Repository</name>
-        <url>file://${project.build.directory}/mvn-repo</url>
-    </repository>
-	</distributionManagement>
 	
 	<developers>
 		<developer>
