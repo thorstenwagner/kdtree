@@ -4,13 +4,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>edu.wlu.cs.levy.cg</groupId>
+	<groupId>de.biomedical.imaging.edu.wlu.cs.levy.cg</groupId>
 	<artifactId>kdtree</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
  
 	<name>KDTree for Java</name>
-	<url></url>
+	<url>https://github.com/thorstenwagner/kdtree</url>
 	<inceptionYear>2016</inceptionYear>
 	
 	<developers>
@@ -29,4 +29,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</developer>
 	</developers>
 	
+	<description>KDTree implementation from Simon Levy with modification to work with double values</description>
+	<scm>
+		<url>https://github.com/thorstenwagner/kdtree</url>
+		<connection>scm:git:git://github.com/thorstenwagner/kdtree</connection>
+		<developerConnection>scm:git:git://github.com/thorstenwagner/kdtree</developerConnection>
+	</scm>
 </project>
