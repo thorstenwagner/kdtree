@@ -37,8 +37,8 @@
 	
 	<scm>
 		<url>https://github.com/thorstenwagner/kdtree</url>
-		<connection>scm:git:git://github.com/thorstenwagner/kdtree</connection>
-		<developerConnection>scm:git:git://github.com/thorstenwagner/kdtree</developerConnection>
+		<connection>scm:git:git://github.com/thorstenwagner/kdtree.git</connection>
+		<developerConnection>scm:git:git@github.com:thorstenwagner/kdtree.git</developerConnection>
 		<tag>kdtree-1.0.1</tag>
 	</scm>
 	
