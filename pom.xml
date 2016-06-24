@@ -3,7 +3,7 @@
 	
 	<groupId>de.biomedical.imaging.edu.wlu.cs.levy.cg</groupId>
 	<artifactId>kdtree</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
  
 	<name>KDTree for Java</name>
