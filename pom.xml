@@ -3,7 +3,7 @@
 	
 	<groupId>de.biomedical.imaging.edu.wlu.cs.levy.cg</groupId>
 	<artifactId>kdtree</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
  
 	<name>KDTree for Java</name>
@@ -39,7 +39,7 @@
 		<url>https://github.com/thorstenwagner/kdtree</url>
 		<connection>scm:git:git://github.com/thorstenwagner/kdtree.git</connection>
 		<developerConnection>scm:git:git@github.com:thorstenwagner/kdtree.git</developerConnection>
-		<tag>kdtree-1.0.1</tag>
+		<tag>kdtree-1.0.2</tag>
 	</scm>
 	
 	<build>
