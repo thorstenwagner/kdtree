@@ -10,8 +10,16 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<packaging>jar</packaging>
  
 	<name>KDTree for Java</name>
+	<description>KDTree implementation from Simon Levy with modifications to work with double values</description>
 	<url>https://github.com/thorstenwagner/kdtree</url>
 	<inceptionYear>2016</inceptionYear>
+	
+	<licenses>
+		<license>
+			<name>LGPL-3.0</name>
+			<url>https://opensource.org/licenses/LGPL-3.0</url>
+		</license>
+	</licenses>
 	
 	<developers>
 		<developer>
@@ -29,7 +37,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</developer>
 	</developers>
 	
-	<description>KDTree implementation from Simon Levy with modification to work with double values</description>
+	
 	<scm>
 		<url>https://github.com/thorstenwagner/kdtree</url>
 		<connection>scm:git:git://github.com/thorstenwagner/kdtree</connection>
@@ -66,6 +74,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			</plugin>
 		</plugins>
 	</build>
+	
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -76,6 +85,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
+	
+	
 	<profiles>
 		<profile>
 			<id>doclint-java8-disable</id>
