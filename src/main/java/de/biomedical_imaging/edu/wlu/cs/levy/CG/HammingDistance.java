@@ -1,4 +1,4 @@
-// DistanceMetric.java : Abstract distance metric class
+// HammingDistance.java : Class for Hamming distance
 //
 // Copyright (C) Simon D. Levy 2014
 //
@@ -22,9 +22,19 @@
 //   <https://projects.ardrone.org/attachments/278/ParrotCopyrightAndDisclaimer.txt>.
 // 
 
-package edu.wlu.cs.levy.CG;
+package de.biomedical_imaging.edu.wlu.cs.levy.CG;
 
-abstract class DistanceMetric {
+class HammingDistance extends DistanceMetric {
     
-    protected abstract double distance(double [] a, double [] b);
+    protected double distance(double [] a, double [] b)  {
+
+	double dist = 0;
+
+	for (int i=0; i<a.length; ++i) {
+	    double diff = (a[i] - b[i]);
+	    dist += Math.abs(diff);
+	}
+
+	return dist;
+    }     
 }

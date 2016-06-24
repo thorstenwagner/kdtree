@@ -1,4 +1,4 @@
-// KeyMissingException.java : cKey-size mismatch exception supporting KDTree class
+// EuclideanDistance.java : Class for Euclidean distance metric
 //
 // Copyright (C) Simon D. Levy 2014
 //
@@ -21,15 +21,25 @@
 // and
 //   <https://projects.ardrone.org/attachments/278/ParrotCopyrightAndDisclaimer.txt>.
 
-package edu.wlu.cs.levy.CG;
+package de.biomedical_imaging.edu.wlu.cs.levy.CG;
 
-public class KeyMissingException extends KDException {  /* made public by MSL */
-
-    public KeyMissingException() {
-	super("Key not found");
+class EuclideanDistance extends DistanceMetric {
+    
+    protected double distance(double [] a, double [] b)  {
+	
+	return Math.sqrt(sqrdist(a, b));
+	
     }
     
-    // arbitrary; every serializable class has to have one of these
-    public static final long serialVersionUID = 3L;
-    
+    protected static double sqrdist(double [] a, double [] b) {
+
+	double dist = 0;
+
+	for (int i=0; i<a.length; ++i) {
+	    double diff = (a[i] - b[i]);
+	    dist += diff*diff;
+	}
+
+	return dist;
+    }     
 }

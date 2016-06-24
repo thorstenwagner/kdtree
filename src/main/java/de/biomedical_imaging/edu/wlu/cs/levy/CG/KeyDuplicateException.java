@@ -1,9 +1,9 @@
-package edu.wlu.cs.levy.CG;
+package de.biomedical_imaging.edu.wlu.cs.levy.CG;
 
 /**
-* KeySizeException is thrown when a KDTree method is invoked on a
-* key whose size (array length) mismatches the one used in the that
-* KDTree's constructor.
+* KeyDuplicateException is thrown when the <TT>KDTree.insert</TT> method
+* is invoked on a key already in the KDTree.
+*
 *
 * Copyright (C) Simon D. Levy 2014
 *
@@ -25,15 +25,13 @@ package edu.wlu.cs.levy.CG;
 *   <https:*projects.ardrone.org/attachments/277/ParrotLicense.txt> 
 * and
 *   <https:*projects.ardrone.org/attachments/278/ParrotCopyrightAndDisclaimer.txt>.
-* 
 */
-public class KeySizeException extends KDException {
+public class KeyDuplicateException extends KDException {
 
-    protected KeySizeException() {
-	super("Key size mismatch");
+    protected KeyDuplicateException() {
+	    super("Key already in tree");
     }
     
     // arbitrary; every serializable class has to have one of these
-    public static final long serialVersionUID = 2L;
-    
+    public static final long serialVersionUID = 1L;
 }

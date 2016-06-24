@@ -22,7 +22,7 @@
 //   <https://projects.ardrone.org/attachments/278/ParrotCopyrightAndDisclaimer.txt>.
 // 
 
-package edu.wlu.cs.levy.CG;
+package de.biomedical_imaging.edu.wlu.cs.levy.CG;
 
 import java.util.*;
 
